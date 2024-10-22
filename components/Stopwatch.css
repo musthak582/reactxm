@@ -1,0 +1,65 @@
+/* Stopwatch.css */
+.stopwatch {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+}
+
+.time-display {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #007bff;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.controls button:not(:disabled) {
+  background-color: #28a745;
+  color: white;
+}
+
+.controls button:not(:disabled):hover {
+  background-color: #218838;
+}
+
+.controls button:not(:disabled).stop {
+  background-color: #dc3545;
+}
+
+.controls button:not(:disabled).stop:hover {
+  background-color: #c82333;
+}
+
+.controls button:not(:disabled).reset {
+  background-color: #007bff;
+}
+
+.controls button:not(:disabled).reset:hover {
+  background-color: #0056b3;
+}
